@@ -9,37 +9,35 @@
 
     <h2>What Can JavaScript Do?</h2>
 
-    <!-- Description about JavaScript functionality -->
     <p>JavaScript can turn a boring, normal face into a happy face.</p>
     <p>Click the button to change the expression below:</p>
 
-    <!-- Button to display a normal face -->
     <button onclick="document.getElementById('myImage').src='https://images.emojiterra.com/google/noto-emoji/unicode-16.0/color/1024px/1f610.png'">Normal Face</button>
     
-    <!-- Image of the face with a unique ID for JavaScript manipulation -->
     <img id="myImage" src="https://images.emojiterra.com/google/noto-emoji/unicode-16.0/color/1024px/1f610.png" style="width:100px">
 
-    <!-- Button to display a happy face -->
+   
     <button onclick="document.getElementById('myImage').src='https://images.emojiterra.com/google/noto-emoji/unicode-15/color/512px/1f642.png'">Happy Face</button>
 
     <p>If you're blind, JavaScript can make the text bigger for you!</p>
 
-    <!-- Text content -->
+    
     <p id="demo">Today, school was kinda great. Wanna hear some secrets I heard today from a student?</p>
 
-    <!-- Button to increase font size -->
+    
     <button type="button" onclick="document.getElementById('demo').style.fontSize='35px'">Make Me Bigger!</button>
 
     <p>It can also hide information you don't want people to see.</p>
 
-    <!-- Button to hide content -->
+   
     <button type="button" onclick="document.getElementById('demo').style.display='none'">Hide Me!</button>
 
-    <!-- Hidden information that can be unhidden later -->
-    <p id="secretInfo" style="display:none">And unhide the information here!</p>
+  
+    <p id="secretInfo" style="display:none">Today, school was kinda great. Wanna hear some secrets I heard today from a student?!</p>
 
-    <!-- Button to reveal hidden content -->
+  
     <button type="button" onclick="document.getElementById('secretInfo').style.display='block'">Unhide Me!</button>
+
 
 </body>
 </html>

@@ -1,33 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Interactions</title>
+</head>
 <body>
 
-<h2>What Can JavaScript Do?</h2>
+    <h2>What Can JavaScript Do?</h2>
 
-<p>jave scritp and turn in to a boring noraml face into a happy face.</p>
+    <!-- Description about JavaScript functionality -->
+    <p>JavaScript can turn a boring, normal face into a happy face.</p>
+    <p>Click the button to change the expression below:</p>
 
-<p>click the button to change expresstion bellow</p>
-
-<button onclick="document.getElementById('myImage').src='https://images.emojiterra.com/google/noto-emoji/unicode-16.0/color/1024px/1f610.png'">normal face</button>
-
-<img id="myImage" src="https://images.emojiterra.com/google/noto-emoji/unicode-16.0/color/1024px/1f610.png" style="width:100px">
-
-<button onclick="document.getElementById('myImage').src='https://images.emojiterra.com/google/noto-emoji/unicode-15/color/512px/1f642.png'">happy face</button>
-<p>if your blind javascriot can make it bigger.</p>
-  
-<p id="demo">today school was kinda great wannna hear some secrests i heard today, froma student.</p> .</p><img id="myImage" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc8FhVr-9oPL32J_oAY0t0upfltpFJCRtIOQ&s" style="width:100px">
-
-<button type="button" onclick="document.getElementById('demo').style.fontSize='35px'">make me bigger!</button>
-
-  <p id="demo">it can also hide information you dont want people to see.</p>
-  
-<button type="button" onclick="document.getElementById('demo').style.display='none'">hide me!</button>
-
-  <p id="demo" style="display:none">and unhide the infomrationp>
+    <!-- Button to display a normal face -->
+    <button onclick="document.getElementById('myImage').src='https://images.emojiterra.com/google/noto-emoji/unicode-16.0/color/1024px/1f610.png'">Normal Face</button>
     
-<button type="button" onclick="document.getElementById('demo').style.display='block'">unhide me!</button>
-    
+    <!-- Image of the face with a unique ID for JavaScript manipulation -->
+    <img id="myImage" src="https://images.emojiterra.com/google/noto-emoji/unicode-16.0/color/1024px/1f610.png" style="width:100px">
 
+    <!-- Button to display a happy face -->
+    <button onclick="document.getElementById('myImage').src='https://images.emojiterra.com/google/noto-emoji/unicode-15/color/512px/1f642.png'">Happy Face</button>
+
+    <p>If you're blind, JavaScript can make the text bigger for you!</p>
+
+    <!-- Text content -->
+    <p id="demo">Today, school was kinda great. Wanna hear some secrets I heard today from a student?</p>
+
+    <!-- Button to increase font size -->
+    <button type="button" onclick="document.getElementById('demo').style.fontSize='35px'">Make Me Bigger!</button>
+
+    <p>It can also hide information you don't want people to see.</p>
+
+    <!-- Button to hide content -->
+    <button type="button" onclick="document.getElementById('demo').style.display='none'">Hide Me!</button>
+
+    <!-- Hidden information that can be unhidden later -->
+    <p id="secretInfo" style="display:none">And unhide the information here!</p>
+
+    <!-- Button to reveal hidden content -->
+    <button type="button" onclick="document.getElementById('secretInfo').style.display='block'">Unhide Me!</button>
 
 </body>
 </html>
+
